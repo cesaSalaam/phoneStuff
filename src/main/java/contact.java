@@ -3,11 +3,10 @@ package main.java;
  * @author Cesa Salaam
  * The contact class represents an entity in the phoneDirectory
  * contact has 6 methods: setName(), getName(), setNumber(), getReferenceNumber(), getReferenceNumber().
- * contact has 3 data members: number of type String, name of type String and referenceNum of type string.
+ * contact has private 3 data members: number of type String, name of type String and referenceNum of type string.
  */
 public class contact {
-	//This class is for the entity in the Phone Directory
-
+	// Data members for class
 	private String number;
 	private String name;
 	private String referenceNum;
@@ -15,7 +14,7 @@ public class contact {
 	public contact(){
 		//Class constructor
 	}
-	//Getters and setters name and number and reference number
+	// Methods for the class
 	public void setName(String name){
 		//This method sets the name of the contact
 		this.name = name;
