@@ -72,8 +72,7 @@ public class phoneDirectory {
 			contacts.add(newContact); // adding contact to contacts list
 			
 			writeToFile(contacts); // adding contacts to the file
-			
-			in.close();
+
 		}
 		public void writeToFile(ArrayList<contact> list){
 			/**
@@ -145,6 +144,8 @@ public class phoneDirectory {
 						System.out.println("Enter the new name: ");
 						String input = in.next();
 						contacts.get(i).setName(input);
+						contacts.get(i).setReferenceNumber(contacts.get(i).getName() + "REF" + contacts.get(i).getNumber()); // updates the reference number with new name
+						writeToFile(contacts); //re-writing the file with updated data
 						System.out.println("Name was changed");
 						break;
 					case 2:
@@ -152,6 +153,8 @@ public class phoneDirectory {
 						System.out.println("Enter the new number: ");
 						String number = in.next();
 						contacts.get(i).setNumber(number);
+						contacts.get(i).setReferenceNumber(contacts.get(i).getName() + "REF" + contacts.get(i).getNumber()); // update the reference number with new number
+						writeToFile(contacts); //re-writing the file with updated data
 						System.out.println("Name was changed");
 						break;
 					}
