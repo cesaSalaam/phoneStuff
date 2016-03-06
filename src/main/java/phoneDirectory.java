@@ -14,7 +14,9 @@ public class phoneDirectory {
 	//Data members
 	
 		private ArrayList<contact> contacts = new ArrayList<contact>();
-		
+		/**
+		 * The phoneDirectory "contacts" Data member is of type ArrayList and holds the contacts.
+		 */
 		private Properties prop = new Properties();
 		
 		private String path = null;

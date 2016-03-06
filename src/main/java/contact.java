@@ -7,10 +7,18 @@ package main.java;
  */
 public class contact {
 	// Data members for class
-	private String number;
+	private String number; 
+	/**
+	 * The contact number Data member is of type String and holds the contacts phoneNumber
+	 */
 	private String name;
+	/**
+	 * The contact name Data member is of type String and holds the contacts name
+	 */
 	private String referenceNum;
-	
+	/**
+	 * The contact referenceNum Data member is of type String and holds the contacts reference number
+	 */
 	public contact(){
 		//Class constructor
 	}
