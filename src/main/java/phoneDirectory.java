@@ -50,7 +50,6 @@ public class phoneDirectory {
 				
 				try
 				{
-					
 					prop_input.close();
 					
 				} catch (IOException err)
@@ -83,9 +82,9 @@ public class phoneDirectory {
 			
 			newContact.setNumber(newNumber); // adding the number to the contact
 			
-			String refNum = newName + "REF" + newNumber; // creating reference number
+			String ref = "name: " + newName + " | " + " number: " + newNumber; // creating reference number
 			
-			newContact.setReferenceNumber(refNum);  // adding reference number to the contact
+			newContact.setReference(ref);  // adding reference number to the contact
 			
 			contacts.add(newContact); // adding contact to contacts list
 			
@@ -104,7 +103,7 @@ public class phoneDirectory {
 				
 				for(contact x:list){
 					
-				writer.write(x.getReferenceNumber()); // adds reference number to text file.
+				writer.write(x.getReference()); // adds reference number to text file.
 				
 				writer.newLine();
 				}
@@ -196,7 +195,7 @@ public class phoneDirectory {
 						
 						contacts.get(i).setName(input);
 						
-						contacts.get(i).setReferenceNumber(contacts.get(i).getName() + "REF" + contacts.get(i).getNumber()); // updates the reference number with new name
+						contacts.get(i).setReference("name: " + contacts.get(i).getName() + " | " + "number: " + contacts.get(i).getNumber()); // updates the reference number with new name
 						
 						writeToFile(contacts); //re-writing the file with updated data
 						
@@ -213,7 +212,7 @@ public class phoneDirectory {
 						
 						contacts.get(i).setNumber(number);
 						
-						contacts.get(i).setReferenceNumber(contacts.get(i).getName() + "REF" + contacts.get(i).getNumber()); // update the reference number with new number
+						contacts.get(i).setReference("name: " + contacts.get(i).getName() + " | " + "number: " + contacts.get(i).getNumber()); // update the reference number with new number
 						
 						writeToFile(contacts); //re-writing the file with updated data
 						

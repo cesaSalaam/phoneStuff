@@ -15,9 +15,9 @@ public class contact {
 	/**
 	 * The contact name Data member is of type String and holds the contacts name
 	 */
-	private String referenceNum;
+	private String reference;
 	/**
-	 * The contact referenceNum Data member is of type String and holds the contacts reference number
+	 * The contact reference Data member is of type String and holds the contacts reference i.e the name and number
 	 */
 	public contact(){
 		//Class constructor
@@ -39,12 +39,12 @@ public class contact {
 		//this method returns the number of the contact, because the number data member is private
 		return number;
 	}
-	public void setReferenceNumber(String refNumber){
+	public void setReference(String refNumber){
 		// this method sets the reference number data member
-		this.referenceNum = refNumber;
+		this.reference = refNumber;
 	}
-	public String getReferenceNumber(){
-		//this method returns the reference number of the contact,  because the referenceNum data member is private
-		return referenceNum;
+	public String getReference(){
+		//this method returns the reference  of the contact,  because the referenceNum data member is private
+		return reference;
 	}
 }
